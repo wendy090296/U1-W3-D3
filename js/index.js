@@ -9,19 +9,20 @@ const inputField = function () {
   const myDiv = document.getElementById("first-div"); // richiamo il div con il suo ID
   myDiv.appendChild(input); // appendo il child (tag input) nel suo parent (div)
 
-  const button = document.createElement("button");
+  const button = document.createElement("button"); // creo un bottone
   button.innerText = "AGGIUNGI";
 
-  const ul = document.createElement("ul");
-  myDiv.appendChild(ul);
+  const ul = document.createElement("ul"); // creo la mia unordered list
+  myDiv.appendChild(ul); // inserisco la ul nel parent tag
 
   myDiv.appendChild(button);
   button.addEventListener("click", function (e) {
-    const li = document.createElement("li");
+    // associo un comportamento al button
+    const li = document.createElement("li"); // creo l'elemento della ul
     ul.appendChild(li);
     li.innerText = input.value;
-    input.value = "";
-    const deletebtn = document.createElement("button");
+    input.value = ""; //  reset
+    const deletebtn = document.createElement("button"); // il mio button delete individuale
     li.appendChild(deletebtn);
     deletebtn.innerText = "rimuovi";
     deletebtn.addEventListener("click", function (e) {
