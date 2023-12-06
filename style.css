@@ -1,8 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap");
+
 body {
   text-align: center;
-  background-color: brown;
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/29/13/37/christmas-1869902_1280.jpg);
+  background-size: cover;
 }
 
 h1 {
-  color: burlywood;
+  color: goldenrod;
+  font-family: "Young Serif", "serif";
+  font-size: 2em;
+  text-shadow: 5px 1px 1px rgba(0, 0, 0, 0.68);
+  margin-top: 40px;
+}
+
+input {
+  padding: 15px;
+  font-size: 20px;
+  border-width: 6px;
+  border-color: #e8a41d;
+  border-style: double;
+  border-radius: 12px;
+  box-shadow: 5px 0px 14px rgba(66, 66, 66, 0.86);
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  background-color: #e8a41d;
+  border: 2px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style-type: none;
 }
